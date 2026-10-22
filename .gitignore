@@ -1,0 +1,45 @@
+# Python environments and caches
+BeVENV/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Old extracted training datasets (the curated examples are in data/)
+Container damage.v1i.yolov8/
+Container Defect Detection.v1-1.0.yolov8/
+extractedFromCustomDoc/
+merged_dataset/
+Output/
+.zip/
+*.zip
+
+# Generated OCR / case outputs are recreated by the application
+!portguard_ocr_starter/outputs/.gitkeep
+
+
+# Superseded root-level launchers and duplicate scripts; active versions are in portguard/
+/portguard_case_dashboard.py
+/portguard_dashboard.py
+/run_portguard_inspection.py
+/run_portguard_inspection_v2.py
+/extract_fields_from_ocr.py
+/run_ocr.py
+/run_ocr_scan_like.py
+/check_document_consistency.py
+/check_document_consistency_v2.py

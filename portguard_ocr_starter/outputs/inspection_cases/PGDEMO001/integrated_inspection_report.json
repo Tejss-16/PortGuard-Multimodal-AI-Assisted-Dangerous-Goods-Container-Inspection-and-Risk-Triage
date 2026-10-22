@@ -1,0 +1,189 @@
+{
+  "project": "PortGuard",
+  "purpose": "PortGuard inspection-case prototype test",
+  "integration_note": "Inspection case PGDEMO001. Synthetic starter test case 002, scan_like image set. The selected container photograph was manually associated for demo purposes; the dataset does not establish that they belong to the same physical shipment. The case grouping is supplied by the operator and has not been independently verified. This prototype does not establish cargo contents or make operational decisions.",
+  "safety_notice": "Synthetic starter documents and computer-vision outputs are for academic testing only. The report does not determine cargo contents or make an operational safety decision. A qualified human reviewer must inspect source material and resolve any findings.",
+  "container_damage_detection": {
+    "model_weights": "runs/detect/container_damage_detector/weights/best.pt",
+    "image": "portguard_ocr_starter/outputs/inspection_cases/PGDEMO001/input/container_photo.jpg",
+    "confidence_threshold": 0.25,
+    "detections_count": 3,
+    "detections": [
+      {
+        "class_id": 0,
+        "class_name": "dent",
+        "confidence": 0.519123,
+        "bbox_xyxy_pixels": [
+          269.17,
+          343.89,
+          432.91,
+          549.95
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "dent",
+        "confidence": 0.428732,
+        "bbox_xyxy_pixels": [
+          266.84,
+          343.3,
+          427.56,
+          469.49
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "dent",
+        "confidence": 0.28852,
+        "bbox_xyxy_pixels": [
+          260.7,
+          338.32,
+          429.59,
+          631.66
+        ]
+      }
+    ],
+    "visualization_dir": "portguard_ocr_starter/outputs/inspection_cases/PGDEMO001/damage_visualized"
+  },
+  "document_processing": {
+    "document_image_directory": "portguard_ocr_starter/outputs/inspection_cases/PGDEMO001/documents",
+    "documents_processed": 4,
+    "raw_ocr_output": "portguard_ocr_starter/outputs/inspection_cases/PGDEMO001/ocr_raw.json",
+    "structured_predictions_output": "portguard_ocr_starter/outputs/inspection_cases/PGDEMO001/predictions.json",
+    "predictions": [
+      {
+        "document_id": "PGDEMO001-DG",
+        "fields": {
+          "container_number": "DEMU7654321",
+          "seal_number": "SYNSEAL002",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+          "packing_group": "III",
+          "packages": "20 IBCs",
+          "gross_weight_kg": "18600",
+          "shipper": "Sample Maritime Chemicals (fictional)",
+          "consignee": "Coastal Test Warehouse (fictional)"
+        }
+      },
+      {
+        "document_id": "PGDEMO001-PACK",
+        "fields": {
+          "container_number": "DEMU7654321",
+          "seal_number": "SYNSEAL999",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "packing_list_reference": "SYN-PL-002",
+          "goods_description": "Synthetic environmentally hazardous liquid",
+          "packages": "20 IBCs",
+          "gross_weight_kg": "18600",
+          "consignee": "Coastal Test Warehouse (fictional)"
+        }
+      },
+      {
+        "document_id": "PGDEMO001-SDS",
+        "fields": {
+          "container_number": "",
+          "seal_number": "",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+          "packing_group": "II",
+          "environmental_hazards": "Yes (example field)",
+          "product_identifier": "PG-SYN-ENV-02"
+        }
+      },
+      {
+        "document_id": "PGDEMO001-SHIP",
+        "fields": {
+          "container_number": "DEMU7654321",
+          "seal_number": "SYNSEAL002",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "shipping_reference": "SYN-BL-002",
+          "shipper": "Sample Maritime Chemicals (fictional)",
+          "consignee": "Coastal Test Warehouse (fictional)",
+          "port_of_loading": "Hazira (illustrative)",
+          "port_of_discharge": "JNPA region (illustrative)",
+          "cargo_description": "Synthetic environmentally hazardous liquid"
+        }
+      }
+    ]
+  },
+  "consistency_check": {
+    "report_path": "portguard_ocr_starter/outputs/inspection_cases/PGDEMO001/consistency_report.json",
+    "summary": {
+      "match": 3,
+      "possible_ocr_error": 1,
+      "value_disagreement": 1,
+      "missing_value": 0,
+      "insufficient_sources": 0
+    },
+    "findings": [
+      {
+        "case_id": "PGDEMO001",
+        "field": "seal_number",
+        "classification": "value_disagreement",
+        "observations": [
+          {
+            "document_id": "PGDEMO001-DG",
+            "document_type": "DG",
+            "value": "SYNSEAL002",
+            "normalized_value": "SYNSEAL002"
+          },
+          {
+            "document_id": "PGDEMO001-PACK",
+            "document_type": "PACK",
+            "value": "SYNSEAL999",
+            "normalized_value": "SYNSEAL999"
+          },
+          {
+            "document_id": "PGDEMO001-SHIP",
+            "document_type": "SHIP",
+            "value": "SYNSEAL002",
+            "normalized_value": "SYNSEAL002"
+          }
+        ],
+        "missing_documents": [],
+        "reason": "Extracted values disagree and do not match a configured OCR-confusion pattern. This is not proof of a source-document conflict; inspect the original documents and OCR output.",
+        "automatic_correction": false
+      },
+      {
+        "case_id": "PGDEMO001",
+        "field": "packing_group",
+        "classification": "possible_ocr_error",
+        "observations": [
+          {
+            "document_id": "PGDEMO001-DG",
+            "document_type": "DG",
+            "value": "III",
+            "normalized_value": "III"
+          },
+          {
+            "document_id": "PGDEMO001-SDS",
+            "document_type": "SDS",
+            "value": "II",
+            "normalized_value": "II"
+          }
+        ],
+        "missing_documents": [],
+        "reason": "Packing-group values differ by Roman-numeral-like tokens. OCR confusion is possible, but a real source-document disagreement is also possible; inspect the original images.",
+        "automatic_correction": false
+      }
+    ],
+    "automatic_correction": false
+  },
+  "case_metadata": {
+    "case_id": "PGDEMO001",
+    "case_folder": "portguard_ocr_starter/outputs/inspection_cases/PGDEMO001",
+    "container_photo": "portguard_ocr_starter/outputs/inspection_cases/PGDEMO001/input/container_photo.jpg",
+    "document_directory": "portguard_ocr_starter/outputs/inspection_cases/PGDEMO001/documents",
+    "document_ids": [
+      "PGDEMO001-DG",
+      "PGDEMO001-PACK",
+      "PGDEMO001-SDS",
+      "PGDEMO001-SHIP"
+    ],
+    "association_method": "operator-selected/manual; not independently verified"
+  }
+}

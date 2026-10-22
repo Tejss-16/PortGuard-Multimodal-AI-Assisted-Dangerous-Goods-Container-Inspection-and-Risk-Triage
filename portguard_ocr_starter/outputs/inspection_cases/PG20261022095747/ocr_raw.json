@@ -1,0 +1,22 @@
+[
+  {
+    "document_id": "PG20261022095747-DG",
+    "image_path": "outputs/inspection_cases/PG20261022095747/documents/PG20261022095747-DG.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\n\nNOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\n\nDangerous-Goods Declaration - Mock Data Sheet\n\nDocument ID: 003-DG Linked test case: SYN-CASE-003\n\nCONTAINER NUMBER SEAL NUMBER\n\nDEMU2468106 SYNSEAL003\n\nUN NUMBER PROPER SHIPPING NAME\n\nUN 3082 ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID,\n\nN.O.S.\n\nHAZARD CLASS PACKING GROUP\n\n9 Ml\n\nPACKAGES / PACKAGING GROSS MASS (KG)\n\n600 bags 15200\n\nSHIPPER CONSIGNEE\n\nFictional Bulk Materials Co. Example Portside Receiver (fictional)\nFor OCR and informatic action development only. Do not use for operational, customs o"
+  },
+  {
+    "document_id": "PG20261022095747-PACK",
+    "image_path": "outputs/inspection_cases/PG20261022095747/documents/PG20261022095747-PACK.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\n\nNOT AN OFFICIAL TOMS, CARRIER OR HAZARDOUS-GOODS FORM\n\nPacking List - Mock Data Sheet\n\nDocument ID: 003-PACK _ Linked test case: SYN-CASE-003\n\nFIELD DECLARED VALUE\n\nPacking list reference SYN-PL-003\n\nContainer number DEMU2468106\n\nSeal number SYNSEAL003\n\nGoods description Synthetic environmentally hazardous solid\nPackage count / type 600 bags\n\nGross weight (kg) 15200\n\nUN number shown UN 3077\n\nHazard class shown 9\n\nConsignee Example Portside Receiver (fictional)\n\nFor OCR and information-extraction development only. Do not use for operational, customs or safet"
+  },
+  {
+    "document_id": "PG20261022095747-SDS",
+    "image_path": "outputs/inspection_cases/PG20261022095747/documents/PG20261022095747-SDS.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DA\n\nNOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\n\nSDS Section 14 - Transport Information Extract\n\nDocument ID: 003-SDS Linked test case: SYN-CASE-003\n\n14.1 UN number or ID number UN 3082\n14.2 UN proper shipping name ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.\n\n14.3 Transport hazard class(es) 9\n\n14.4 Packing group (if applicable) ||\n\n14.5 Environmental hazards Yes (example field)\nProduct identifier PG-SYN-ENV-03\nTest note Synthetic excerpt for OCR pipeline testing; not a safety data sheet for a real\nproduct.\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions"
+  },
+  {
+    "document_id": "PG20261022095747-SHIP",
+    "image_path": "outputs/inspection_cases/PG20261022095747/documents/PG20261022095747-SHIP.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\n\nNOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\n\nShipping Details Summary - Mock Data Sheet\n\nDocument ID: 003-SHIP Linked test case: SYN-CASE-003\n\nShipping reference\n\nContainer number\n\nSeal number\n\nShipper\n\nConsignee\n\nPort of loading\n\nPort of discharge\n\nCargo description\n\nUN number (declared)\n\nHazard class (declared)\n\nFor OCR and informatio\n\nSYN-BL-003\n\nDEMU2468106\n\nSYNSEALO03\n\nFictional Bulk Materials Co.\n\nExample Portside Receiver (fictional)\n\nKandla (illustrative)\n\nJNPA region (illustrative)\n\nSynthetic environmentally hazardous solid\n\nUN 3077\n\nonly. Do"
+  }
+]

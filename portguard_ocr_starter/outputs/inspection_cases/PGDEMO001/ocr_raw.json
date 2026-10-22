@@ -1,0 +1,22 @@
+[
+  {
+    "document_id": "PGDEMO001-DG",
+    "image_path": "outputs/inspection_cases/PGDEMO001/documents/PGDEMO001-DG.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\n\nNOT AN OFFICIAI TOMS, CARRIER OR HAZARDOUS-GOODS FORM\n\nDangerous-Goods Declaration - Mock Data Sheet\n\nDocument ID: 002-DG __Linked test case: SYN-CASE-002\n\nContainer number DEMU7654321\n\nSeal number SYNSEAL002\n\nUN number UN 3082\n\nProper shipping name ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.\nHazard class 9\n\nPacking group lll\n\nPackages / packaging 20 IBCs\n\nGross mass (kg) 18600\n\nShipper Sample Maritime Chemicals (fictional)\nConsignee Coastal Test Warehouse (fictional)\n\nFor OCR and information-extracti\n\ndevelopment only. Do not use for operational, customs or saft"
+  },
+  {
+    "document_id": "PGDEMO001-PACK",
+    "image_path": "outputs/inspection_cases/PGDEMO001/documents/PGDEMO001-PACK.png",
+    "ocr_text": "ARD | SYNTHETIC TEST DA\n\nNOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\n\nPacking List - Mock Data Sheet\n\nDocument ID: 002-PACK _ Linked test case: SYN-CASE-002\n\nPacking list reference SYN-PL-002\n\nContainer number DEMU7654321\n\nSeal number SYNSEAL999\n\nGoods description Synthetic environmentally hazardous liquid\nPackage count / type 20 IBCs\n\nGross weight (kg) 18600\n\nUN number shown UN 3082\n\nHazard class shown 9\n\nConsignee Coastal Test Warehouse (fictional)\n\nFor OCR and information-extraction development only. Do not use for operati\n\nsty decisions."
+  },
+  {
+    "document_id": "PGDEMO001-SDS",
+    "image_path": "outputs/inspection_cases/PGDEMO001/documents/PGDEMO001-SDS.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\n\nNOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\n\nSDS Section 14 - Transport Information Extract\n\nDocument ID: 002-SDS__Linked test case: SYN-CASE-002\n\n14.1 UN number or ID number\nUN 3082\n\n14.2 UN proper shipping name\nENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.\n\n14.3 Transport hazard class(es)\n9\n\n14.4 Packing group (if applicable)\nIl\n\n14.5 Environmental hazards\nYes (example field)\n\nProduct identifier\nPG-SYN-ENV-02\n\nTest note\nSynthetic excerpt for OCR pipeline testing; not a safety data sheet for a real product.\n\nFor OCR and information-extraction development only. Do not use for operational, c\n\nafety decisions"
+  },
+  {
+    "document_id": "PGDEMO001-SHIP",
+    "image_path": "outputs/inspection_cases/PGDEMO001/documents/PGDEMO001-SHIP.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\n\nNOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\n\nShipping Details Summary - Mock Data Sheet\n\nDocument ID: 002-SHIP _ Linked test case: SYN-CASE-002\n\nShipping reference SYN-BL-002\n\nContainer number DEMU7654321\n\nSeal number SYNSEAL002\n\nShipper Sample Maritime Chemicals (fictional)\nConsignee Coastal Test Warehouse (fictional)\n\nPort of loading Hazira (illustrative)\n\nPort of discharge JNPA region (illustrative)\n\nCargo description Synthetic environmentally hazardous liquid\nUN number (declared) UN 3082\n\nHazard class (declared) 9\n\nFor OCR and information-extraction development only. Do not s or safety decisions"
+  }
+]

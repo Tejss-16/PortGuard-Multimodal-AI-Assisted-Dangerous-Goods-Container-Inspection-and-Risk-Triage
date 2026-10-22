@@ -1,0 +1,22 @@
+[
+  {
+    "document_id": "abcdsf8989-DG",
+    "image_path": "outputs/inspection_cases/abcdsf8989/documents/abcdsf8989-DG.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\n\nNOT AN OFFICIAI OMS, CARRIER OR HAZARDOUS-GOODS FORM\n\nDangerous-Goods Declaration - Mock Data Sheet\n\nDocument ID: 001-DG__Linked test case: SYN-CASE-001\n\nCONTAINER NUMBER SEAL NUMBER\n\nDEMU1234560 SYNSEALO01\n\nUN NUMBER PROPER SHIPPING NAME\n\nUN 1760 CORROSIVE LIQUID, N.O.S.\n\nHAZARD CLASS PACKING GROUP\n\n8 i}\n\nPACKAGES / PACKAGING GROSS MASS (KG)\n\n48 drums 12480\n\nSHIPPER CONSIGNEE\n\nExample Chemicals Ltd. (fictional) Harbour Demo Depot (fictional)\nFor OCR and information-extraction development only. Do not use for operational, customs o'"
+  },
+  {
+    "document_id": "abcdsf8989-PACK",
+    "image_path": "outputs/inspection_cases/abcdsf8989/documents/abcdsf8989-PACK.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\n\nNOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARD: GOODS FORM\n\nPacking List - Mock Data Sheet\n\nDocument ID: 001-PACK Linked test case: SYN-CASE-001\n\nFIELD DECLARED VALUE\n\nPacking list reference SYN-PL-001\n\nContainer number DEMU1234560\n\nSeal number SYNSEALO01\n\nGoods description Synthetic corrosive test liquid\nPackage count / type 48 drums\n\nGross weight (kg) 12480\n\nUN number shown UN 1760\n\nHazard class shown 8\n\nConsignee Harbour Demo Depot (fictional)\n\n‘or OCR and information-extraction de"
+  },
+  {
+    "document_id": "abcdsf8989-SDS",
+    "image_path": "outputs/inspection_cases/abcdsf8989/documents/abcdsf8989-SDS.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\n\nNOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\n\nSDS Section 14 - Transport Information Extract\n\nDocument ID: 001-SDS Linked test case: SYN-CASE-001\n\n14.1 UN number or ID number UN 1760\n\n14.2 UN proper shipping name CORROSIVE LIQUID, N.O.S.\n\n14.3 Transport hazard class(es) 8\n\n14.4 Packing group (if applicable) |!\n\n14.5 Environmental hazards Not stated in this synthetic example\nProduct identifier PG-SYN-CORR-01\nTest note Synthetic excerpt for OCR pipeline testing; not a safety data sheet for a real\n\nproduct."
+  },
+  {
+    "document_id": "abcdsf8989-SHIP",
+    "image_path": "outputs/inspection_cases/abcdsf8989/documents/abcdsf8989-SHIP.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\n\nNOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\n\nShipping Details Summary - Mock Data Sheet\n\nDocument ID: 001-SHIP Linked test case: SYN-CASE-001\n\nShipping reference SYN-BL-001\n\nContainer number DEMU1234560\n\nSeal number SYNSEALO01\n\nShipper Example Chemicals Ltd. (fictional)\nConsignee Harbour Demo Depot (fictional)\nPort of loading Mundra (illustrative)\n\nPort of discharge JNPA region (illustrative)\n\nCargo description Synthetic corrosive test liquid\n\nUN number (declared) UN 1760\n\nHazard class (declared) 8\n\nFor OCR and information-extra\n\ndevelopment only. Do not use for operational, cus safety decisions."
+  }
+]

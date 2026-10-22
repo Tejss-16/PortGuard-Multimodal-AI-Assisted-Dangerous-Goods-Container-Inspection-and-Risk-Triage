@@ -1,0 +1,28 @@
+{
+  "case_id": "PG20261022095747",
+  "created_at": "2026-10-22T09:58:39+05:30",
+  "status": "Awaiting officer review",
+  "container_photo": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/input/container_photo.jpg",
+  "document_directory": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/documents",
+  "document_ids": [
+    "PG20261022095747-DG",
+    "PG20261022095747-PACK",
+    "PG20261022095747-SDS",
+    "PG20261022095747-SHIP"
+  ],
+  "document_source_note": "Synthetic starter test case 003, scan_like image set. The selected container photograph was manually associated for demo purposes; the dataset does not establish that they belong to the same physical shipment.",
+  "synthetic_reference_case": "003",
+  "review": {
+    "decision": "Pending",
+    "reviewer": "",
+    "notes": "",
+    "history": []
+  },
+  "artifacts": {
+    "report": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/integrated_inspection_report.json",
+    "ocr_raw": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/ocr_raw.json",
+    "predictions": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/predictions.json",
+    "consistency_report": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/consistency_report.json",
+    "damage_visualization_dir": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/damage_visualized"
+  }
+}

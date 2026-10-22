@@ -1,0 +1,99 @@
+{
+  "input_file": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/predictions_integrated.json",
+  "synthetic_dataset_note": "Field/document applicability is configured for PortGuard starter templates. Validate against approved real document layouts before use beyond research/testing.",
+  "classification_note": "Possible OCR error is a rule-based review hint, not an OCR-confidence measurement. Value disagreement does not prove the source documents are wrong.",
+  "automatic_correction": false,
+  "summary": {
+    "match": 12,
+    "possible_ocr_error": 1,
+    "value_disagreement": 2,
+    "missing_value": 0,
+    "insufficient_sources": 0
+  },
+  "findings": [
+    {
+      "case_id": "002",
+      "field": "seal_number",
+      "classification": "value_disagreement",
+      "observations": [
+        {
+          "document_id": "002-DG",
+          "document_type": "DG",
+          "value": "SYNSEAL002",
+          "normalized_value": "SYNSEAL002"
+        },
+        {
+          "document_id": "002-PACK",
+          "document_type": "PACK",
+          "value": "SYNSEAL999",
+          "normalized_value": "SYNSEAL999"
+        },
+        {
+          "document_id": "002-SHIP",
+          "document_type": "SHIP",
+          "value": "SYNSEAL002",
+          "normalized_value": "SYNSEAL002"
+        }
+      ],
+      "missing_documents": [],
+      "reason": "Extracted values disagree and do not match a configured OCR-confusion pattern. This is not proof of a source-document conflict; inspect the original documents and OCR output.",
+      "automatic_correction": false
+    },
+    {
+      "case_id": "002",
+      "field": "packing_group",
+      "classification": "possible_ocr_error",
+      "observations": [
+        {
+          "document_id": "002-DG",
+          "document_type": "DG",
+          "value": "III",
+          "normalized_value": "III"
+        },
+        {
+          "document_id": "002-SDS",
+          "document_type": "SDS",
+          "value": "II",
+          "normalized_value": "II"
+        }
+      ],
+      "missing_documents": [],
+      "reason": "Packing-group values differ by Roman-numeral-like tokens. OCR confusion is possible, but a real source-document disagreement is also possible; inspect the original images.",
+      "automatic_correction": false
+    },
+    {
+      "case_id": "003",
+      "field": "un_number",
+      "classification": "value_disagreement",
+      "observations": [
+        {
+          "document_id": "003-DG",
+          "document_type": "DG",
+          "value": "UN 3082",
+          "normalized_value": "UN 3082"
+        },
+        {
+          "document_id": "003-PACK",
+          "document_type": "PACK",
+          "value": "UN 3077",
+          "normalized_value": "UN 3077"
+        },
+        {
+          "document_id": "003-SDS",
+          "document_type": "SDS",
+          "value": "UN 3082",
+          "normalized_value": "UN 3082"
+        },
+        {
+          "document_id": "003-SHIP",
+          "document_type": "SHIP",
+          "value": "UN 3077",
+          "normalized_value": "UN 3077"
+        }
+      ],
+      "missing_documents": [],
+      "reason": "Extracted values disagree and do not match a configured OCR-confusion pattern. This is not proof of a source-document conflict; inspect the original documents and OCR output.",
+      "automatic_correction": false
+    }
+  ]
+}

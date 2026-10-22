@@ -1,0 +1,43 @@
+[
+  {
+    "case_id": "SYN-CASE-001",
+    "expected_cross_document_status": "consistent",
+    "intentional_mismatches": [],
+    "note": "All document fields intended to align."
+  },
+  {
+    "case_id": "SYN-CASE-002",
+    "expected_cross_document_status": "mismatch",
+    "intentional_mismatches": [
+      {
+        "field": "seal_number",
+        "document_a": "dangerous_goods_declaration",
+        "value_a": "SYNSEAL002",
+        "document_b": "packing_list",
+        "value_b": "SYNSEAL999"
+      }
+    ],
+    "note": "The packing list seal is intentionally different."
+  },
+  {
+    "case_id": "SYN-CASE-003",
+    "expected_cross_document_status": "mismatch",
+    "intentional_mismatches": [
+      {
+        "field": "un_number",
+        "document_a": "dangerous_goods_declaration",
+        "value_a": "UN 3082",
+        "document_b": "shipping_details_summary",
+        "value_b": "UN 3077"
+      },
+      {
+        "field": "un_number",
+        "document_a": "sds_section_14",
+        "value_a": "UN 3082",
+        "document_b": "packing_list",
+        "value_b": "UN 3077"
+      }
+    ],
+    "note": "Intentional UN-number mismatch: the dangerous-goods declaration and SDS extract show UN 3082, while the shipping-details summary and packing list show UN 3077. This is a deliberately inconsistent test fixture, not a claim about the same real product."
+  }
+]

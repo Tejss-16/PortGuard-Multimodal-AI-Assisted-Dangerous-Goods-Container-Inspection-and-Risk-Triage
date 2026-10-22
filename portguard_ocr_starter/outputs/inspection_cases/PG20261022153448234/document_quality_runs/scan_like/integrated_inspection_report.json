@@ -1,0 +1,665 @@
+{
+  "project": "PortGuard",
+  "purpose": "PortGuard inspection-case prototype test",
+  "integration_note": "Inspection case PG20261022153448234. Synthetic benchmark quality variant 'scan_like'. All three document test cases (001, 002, 003) are included. The container photo is processed as a separate visual-model input and is not claimed to belong to these synthetic shipments. The case grouping is supplied by the operator and has not been independently verified. This prototype does not establish cargo contents or make operational decisions.",
+  "safety_notice": "This report is not a cargo-content determination or an operational safety/release decision. Review original documents and images.",
+  "container_damage_detection": {
+    "model_weights": "runs/detect/container_damage_detector/weights/best.pt",
+    "image": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/input/container_photo.jpg",
+    "confidence_threshold": 0.25,
+    "detections_count": 1,
+    "detections": [
+      {
+        "class_id": 0,
+        "class_name": "dent",
+        "confidence": 0.918636,
+        "bbox_xyxy_pixels": [
+          282.81,
+          360.93,
+          418.47,
+          449.14
+        ]
+      }
+    ],
+    "visualization_dir": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/document_quality_runs/scan_like/damage_visualized"
+  },
+  "document_processing": {
+    "document_image_directory": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/document_quality_runs/scan_like/documents",
+    "documents_processed": 12,
+    "raw_ocr_output": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/document_quality_runs/scan_like/ocr_raw.json",
+    "pdf_extraction_details": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/document_quality_runs/scan_like/pdf_extraction_details.json",
+    "structured_predictions_output": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/document_quality_runs/scan_like/predictions.json",
+    "predictions": [
+      {
+        "document_id": "001-DG",
+        "fields": {
+          "container_number": "DEMU1234560",
+          "seal_number": "SYNSEAL001",
+          "un_number": "UN 1760",
+          "hazard_class": "8",
+          "proper_shipping_name": "CORROSIVE LIQUID, N.O.S.",
+          "packing_group": "II",
+          "packages": "48 drums",
+          "gross_weight_kg": "12480",
+          "shipper": "Example Chemicals Ltd. (fictional)",
+          "consignee": "Harbour Demo Depot (fictional)"
+        },
+        "source_format": "image",
+        "source_file": "001-DG.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 53.84,
+          "edge_stddev": 28.59,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 446,
+          "source_file": "001-DG.png"
+        }
+      },
+      {
+        "document_id": "001-PACK",
+        "fields": {
+          "container_number": "DEMU1234560",
+          "seal_number": "SYNSEAL001",
+          "un_number": "UN 1760",
+          "hazard_class": "8",
+          "packing_list_reference": "SYN-PL-001",
+          "goods_description": "Synthetic corrosive test liquid",
+          "packages": "48 drums",
+          "gross_weight_kg": "12480",
+          "consignee": "Harbour Demo Depot (fictional)"
+        },
+        "source_format": "image",
+        "source_file": "001-PACK.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 58.73,
+          "edge_stddev": 29.27,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 411,
+          "source_file": "001-PACK.png"
+        }
+      },
+      {
+        "document_id": "001-SDS",
+        "fields": {
+          "container_number": "",
+          "seal_number": "",
+          "un_number": "UN 1760",
+          "hazard_class": "8",
+          "proper_shipping_name": "CORROSIVE LIQUID, N.O.S.",
+          "packing_group": "II",
+          "environmental_hazards": "Not stated in this synthetic example",
+          "product_identifier": "PG-SYN-CORR-01"
+        },
+        "source_format": "image",
+        "source_file": "001-SDS.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 54.07,
+          "edge_stddev": 29.24,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 501,
+          "source_file": "001-SDS.png"
+        }
+      },
+      {
+        "document_id": "001-SHIP",
+        "fields": {
+          "container_number": "DEMU1234560",
+          "seal_number": "SYNSEAL001",
+          "un_number": "UN 1760",
+          "hazard_class": "8",
+          "shipping_reference": "SYN-BL-001",
+          "shipper": "Example Chemicals Ltd. (fictional)",
+          "consignee": "Harbour Demo Depot (fictional)",
+          "port_of_loading": "Mundra (illustrative)",
+          "port_of_discharge": "JNPA region (illustrative)",
+          "cargo_description": "Synthetic corrosive test liquid"
+        },
+        "source_format": "image",
+        "source_file": "001-SHIP.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 53.92,
+          "edge_stddev": 29.65,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 487,
+          "source_file": "001-SHIP.png"
+        }
+      },
+      {
+        "document_id": "002-DG",
+        "fields": {
+          "container_number": "DEMU7654321",
+          "seal_number": "SYNSEAL002",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+          "packing_group": "III",
+          "packages": "20 IBCs",
+          "gross_weight_kg": "18600",
+          "shipper": "Sample Maritime Chemicals (fictional)",
+          "consignee": "Coastal Test Warehouse (fictional)"
+        },
+        "source_format": "image",
+        "source_file": "002-DG.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 54.18,
+          "edge_stddev": 29.38,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 504,
+          "source_file": "002-DG.png"
+        }
+      },
+      {
+        "document_id": "002-PACK",
+        "fields": {
+          "container_number": "DEMU7654321",
+          "seal_number": "SYNSEAL999",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "packing_list_reference": "SYN-PL-002",
+          "goods_description": "Synthetic environmentally hazardous liquid",
+          "packages": "20 IBCs",
+          "gross_weight_kg": "18600",
+          "consignee": "Coastal Test Warehouse (fictional)"
+        },
+        "source_format": "image",
+        "source_file": "002-PACK.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 53.69,
+          "edge_stddev": 28.45,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 446,
+          "source_file": "002-PACK.png"
+        }
+      },
+      {
+        "document_id": "002-SDS",
+        "fields": {
+          "container_number": "",
+          "seal_number": "",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+          "packing_group": "II",
+          "environmental_hazards": "Yes (example field)",
+          "product_identifier": "PG-SYN-ENV-02"
+        },
+        "source_format": "image",
+        "source_file": "002-SDS.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 54.36,
+          "edge_stddev": 29.91,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 508,
+          "source_file": "002-SDS.png"
+        }
+      },
+      {
+        "document_id": "002-SHIP",
+        "fields": {
+          "container_number": "DEMU7654321",
+          "seal_number": "SYNSEAL002",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "shipping_reference": "SYN-BL-002",
+          "shipper": "Sample Maritime Chemicals (fictional)",
+          "consignee": "Coastal Test Warehouse (fictional)",
+          "port_of_loading": "Hazira (illustrative)",
+          "port_of_discharge": "JNPA region (illustrative)",
+          "cargo_description": "Synthetic environmentally hazardous liquid"
+        },
+        "source_format": "image",
+        "source_file": "002-SHIP.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 54.23,
+          "edge_stddev": 30.02,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 506,
+          "source_file": "002-SHIP.png"
+        }
+      },
+      {
+        "document_id": "003-DG",
+        "fields": {
+          "container_number": "DEMU2468106",
+          "seal_number": "SYNSEAL003",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+          "packing_group": "III",
+          "packages": "600 bags",
+          "gross_weight_kg": "15200",
+          "shipper": "Fictional Bulk Materials Co.",
+          "consignee": "Example Portside Receiver (fictional)"
+        },
+        "source_format": "image",
+        "source_file": "003-DG.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 54.14,
+          "edge_stddev": 29.22,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 474,
+          "source_file": "003-DG.png"
+        }
+      },
+      {
+        "document_id": "003-PACK",
+        "fields": {
+          "container_number": "DEMU2468106",
+          "seal_number": "SYNSEAL003",
+          "un_number": "UN 3077",
+          "hazard_class": "9",
+          "packing_list_reference": "SYN-PL-003",
+          "goods_description": "Synthetic environmentally hazardous solid",
+          "packages": "600 bags",
+          "gross_weight_kg": "15200",
+          "consignee": "Example Portside Receiver (fictional)"
+        },
+        "source_format": "image",
+        "source_file": "003-PACK.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 59.0,
+          "edge_stddev": 29.3,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 428,
+          "source_file": "003-PACK.png"
+        }
+      },
+      {
+        "document_id": "003-SDS",
+        "fields": {
+          "container_number": "",
+          "seal_number": "",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+          "packing_group": "III",
+          "environmental_hazards": "Yes (example field)",
+          "product_identifier": "PG-SYN-ENV-03"
+        },
+        "source_format": "image",
+        "source_file": "003-SDS.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 54.15,
+          "edge_stddev": 29.56,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 509,
+          "source_file": "003-SDS.png"
+        }
+      },
+      {
+        "document_id": "003-SHIP",
+        "fields": {
+          "container_number": "DEMU2468106",
+          "seal_number": "SYNSEAL003",
+          "un_number": "UN 3077",
+          "hazard_class": "9",
+          "shipping_reference": "SYN-BL-003",
+          "shipper": "Fictional Bulk Materials Co.",
+          "consignee": "Example Portside Receiver (fictional)",
+          "port_of_loading": "Kandla (illustrative)",
+          "port_of_discharge": "JNPA region (illustrative)",
+          "cargo_description": "Synthetic environmentally hazardous solid"
+        },
+        "source_format": "image",
+        "source_file": "003-SHIP.png",
+        "quality_assessment": {
+          "quality_assessment": "degraded",
+          "contrast_stddev": 53.91,
+          "edge_stddev": 29.91,
+          "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+          "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+          "ocr_method": "Tesseract OCR",
+          "recognized_alphanumeric_characters": 500,
+          "source_file": "003-SHIP.png"
+        }
+      }
+    ],
+    "quality_assessments": [
+      {
+        "source_file": "001-DG.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 53.84,
+        "edge_stddev": 28.59,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      },
+      {
+        "source_file": "001-PACK.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 58.73,
+        "edge_stddev": 29.27,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      },
+      {
+        "source_file": "001-SDS.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 54.07,
+        "edge_stddev": 29.24,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      },
+      {
+        "source_file": "001-SHIP.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 53.92,
+        "edge_stddev": 29.65,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      },
+      {
+        "source_file": "002-DG.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 54.18,
+        "edge_stddev": 29.38,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      },
+      {
+        "source_file": "002-PACK.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 53.69,
+        "edge_stddev": 28.45,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      },
+      {
+        "source_file": "002-SDS.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 54.36,
+        "edge_stddev": 29.91,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      },
+      {
+        "source_file": "002-SHIP.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 54.23,
+        "edge_stddev": 30.02,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      },
+      {
+        "source_file": "003-DG.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 54.14,
+        "edge_stddev": 29.22,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      },
+      {
+        "source_file": "003-PACK.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 59.0,
+        "edge_stddev": 29.3,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      },
+      {
+        "source_file": "003-SDS.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 54.15,
+        "edge_stddev": 29.56,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      },
+      {
+        "source_file": "003-SHIP.png",
+        "quality_assessment": "degraded",
+        "contrast_stddev": 53.91,
+        "edge_stddev": 29.91,
+        "preprocessing": "automatic grayscale/autocontrast/sharpen/upscale",
+        "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier."
+      }
+    ],
+    "consistency_report_path": "portguard_ocr_starter/outputs/consistency_report_integrated.json",
+    "consistency_summary": {
+      "match": 12,
+      "possible_ocr_error": 1,
+      "value_disagreement": 2,
+      "missing_value": 0,
+      "insufficient_sources": 0
+    },
+    "consistency_findings": [
+      {
+        "case_id": "002",
+        "field": "seal_number",
+        "classification": "value_disagreement",
+        "observations": [
+          {
+            "document_id": "002-DG",
+            "document_type": "DG",
+            "value": "SYNSEAL002",
+            "normalized_value": "SYNSEAL002"
+          },
+          {
+            "document_id": "002-PACK",
+            "document_type": "PACK",
+            "value": "SYNSEAL999",
+            "normalized_value": "SYNSEAL999"
+          },
+          {
+            "document_id": "002-SHIP",
+            "document_type": "SHIP",
+            "value": "SYNSEAL002",
+            "normalized_value": "SYNSEAL002"
+          }
+        ],
+        "missing_documents": [],
+        "reason": "Extracted values disagree and do not match a configured OCR-confusion pattern. This is not proof of a source-document conflict; inspect the original documents and OCR output.",
+        "automatic_correction": false
+      },
+      {
+        "case_id": "002",
+        "field": "packing_group",
+        "classification": "possible_ocr_error",
+        "observations": [
+          {
+            "document_id": "002-DG",
+            "document_type": "DG",
+            "value": "III",
+            "normalized_value": "III"
+          },
+          {
+            "document_id": "002-SDS",
+            "document_type": "SDS",
+            "value": "II",
+            "normalized_value": "II"
+          }
+        ],
+        "missing_documents": [],
+        "reason": "Packing-group values differ by Roman-numeral-like tokens. OCR confusion is possible, but a real source-document disagreement is also possible; inspect the original images.",
+        "automatic_correction": false
+      },
+      {
+        "case_id": "003",
+        "field": "un_number",
+        "classification": "value_disagreement",
+        "observations": [
+          {
+            "document_id": "003-DG",
+            "document_type": "DG",
+            "value": "UN 3082",
+            "normalized_value": "UN 3082"
+          },
+          {
+            "document_id": "003-PACK",
+            "document_type": "PACK",
+            "value": "UN 3077",
+            "normalized_value": "UN 3077"
+          },
+          {
+            "document_id": "003-SDS",
+            "document_type": "SDS",
+            "value": "UN 3082",
+            "normalized_value": "UN 3082"
+          },
+          {
+            "document_id": "003-SHIP",
+            "document_type": "SHIP",
+            "value": "UN 3077",
+            "normalized_value": "UN 3077"
+          }
+        ],
+        "missing_documents": [],
+        "reason": "Extracted values disagree and do not match a configured OCR-confusion pattern. This is not proof of a source-document conflict; inspect the original documents and OCR output.",
+        "automatic_correction": false
+      }
+    ]
+  },
+  "consistency_check": {
+    "report_path": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/document_quality_runs/scan_like/consistency_report.json",
+    "summary": {
+      "match": 12,
+      "possible_ocr_error": 1,
+      "value_disagreement": 2,
+      "missing_value": 0,
+      "insufficient_sources": 0
+    },
+    "findings": [
+      {
+        "case_id": "002",
+        "field": "seal_number",
+        "classification": "value_disagreement",
+        "observations": [
+          {
+            "document_id": "002-DG",
+            "document_type": "DG",
+            "value": "SYNSEAL002",
+            "normalized_value": "SYNSEAL002"
+          },
+          {
+            "document_id": "002-PACK",
+            "document_type": "PACK",
+            "value": "SYNSEAL999",
+            "normalized_value": "SYNSEAL999"
+          },
+          {
+            "document_id": "002-SHIP",
+            "document_type": "SHIP",
+            "value": "SYNSEAL002",
+            "normalized_value": "SYNSEAL002"
+          }
+        ],
+        "missing_documents": [],
+        "reason": "Extracted values disagree and do not match a configured OCR-confusion pattern. This is not proof of a source-document conflict; inspect the original documents and OCR output.",
+        "automatic_correction": false
+      },
+      {
+        "case_id": "002",
+        "field": "packing_group",
+        "classification": "possible_ocr_error",
+        "observations": [
+          {
+            "document_id": "002-DG",
+            "document_type": "DG",
+            "value": "III",
+            "normalized_value": "III"
+          },
+          {
+            "document_id": "002-SDS",
+            "document_type": "SDS",
+            "value": "II",
+            "normalized_value": "II"
+          }
+        ],
+        "missing_documents": [],
+        "reason": "Packing-group values differ by Roman-numeral-like tokens. OCR confusion is possible, but a real source-document disagreement is also possible; inspect the original images.",
+        "automatic_correction": false
+      },
+      {
+        "case_id": "003",
+        "field": "un_number",
+        "classification": "value_disagreement",
+        "observations": [
+          {
+            "document_id": "003-DG",
+            "document_type": "DG",
+            "value": "UN 3082",
+            "normalized_value": "UN 3082"
+          },
+          {
+            "document_id": "003-PACK",
+            "document_type": "PACK",
+            "value": "UN 3077",
+            "normalized_value": "UN 3077"
+          },
+          {
+            "document_id": "003-SDS",
+            "document_type": "SDS",
+            "value": "UN 3082",
+            "normalized_value": "UN 3082"
+          },
+          {
+            "document_id": "003-SHIP",
+            "document_type": "SHIP",
+            "value": "UN 3077",
+            "normalized_value": "UN 3077"
+          }
+        ],
+        "missing_documents": [],
+        "reason": "Extracted values disagree and do not match a configured OCR-confusion pattern. This is not proof of a source-document conflict; inspect the original documents and OCR output.",
+        "automatic_correction": false
+      }
+    ],
+    "automatic_correction": false
+  },
+  "pdf_extractor_integration": {
+    "module": "portguard_ocr_starter/scripts/extract_document.py",
+    "method": "embedded PDF text where useful; otherwise OCR fallback per page",
+    "field_aliases": "portguard_ocr_starter/scripts/field_aliases.py"
+  },
+  "case_metadata": {
+    "case_id": "PG20261022153448234",
+    "case_folder": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/document_quality_runs/scan_like",
+    "container_photo": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/input/container_photo.jpg",
+    "document_directory": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/document_quality_runs/scan_like/documents",
+    "document_ids": [
+      "001-DG",
+      "001-PACK",
+      "001-SDS",
+      "001-SHIP",
+      "002-DG",
+      "002-PACK",
+      "002-SDS",
+      "002-SHIP",
+      "003-DG",
+      "003-PACK",
+      "003-SDS",
+      "003-SHIP"
+    ],
+    "association_method": "operator-selected/manual; not independently verified"
+  }
+}

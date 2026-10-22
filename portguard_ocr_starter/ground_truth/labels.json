@@ -1,0 +1,239 @@
+[
+  {
+    "document_id": "001-DG",
+    "case_id": "SYN-CASE-001",
+    "document_type": "dangerous_goods_declaration",
+    "pdf_path": "documents/001-DG_dangerous_goods_declaration.pdf",
+    "clean_image_path": "images/clean/001-DG.png",
+    "scan_like_image_path": "images/scan_like/001-DG.png",
+    "expected_fields": {
+      "container_number": "DEMU1234560",
+      "seal_number": "SYNSEAL001",
+      "un_number": "UN 1760",
+      "proper_shipping_name": "CORROSIVE LIQUID, N.O.S.",
+      "hazard_class": "8",
+      "packing_group": "II",
+      "packages": "48 drums",
+      "gross_weight_kg": "12480",
+      "shipper": "Example Chemicals Ltd. (fictional)",
+      "consignee": "Harbour Demo Depot (fictional)"
+    },
+    "synthetic_only": true
+  },
+  {
+    "document_id": "001-SHIP",
+    "case_id": "SYN-CASE-001",
+    "document_type": "shipping_details_summary",
+    "pdf_path": "documents/001-SHIP_shipping_details_summary.pdf",
+    "clean_image_path": "images/clean/001-SHIP.png",
+    "scan_like_image_path": "images/scan_like/001-SHIP.png",
+    "expected_fields": {
+      "shipping_reference": "SYN-BL-001",
+      "container_number": "DEMU1234560",
+      "seal_number": "SYNSEAL001",
+      "shipper": "Example Chemicals Ltd. (fictional)",
+      "consignee": "Harbour Demo Depot (fictional)",
+      "port_of_loading": "Mundra (illustrative)",
+      "port_of_discharge": "JNPA region (illustrative)",
+      "cargo_description": "Synthetic corrosive test liquid",
+      "un_number": "UN 1760",
+      "hazard_class": "8"
+    },
+    "synthetic_only": true
+  },
+  {
+    "document_id": "001-PACK",
+    "case_id": "SYN-CASE-001",
+    "document_type": "packing_list",
+    "pdf_path": "documents/001-PACK_packing_list.pdf",
+    "clean_image_path": "images/clean/001-PACK.png",
+    "scan_like_image_path": "images/scan_like/001-PACK.png",
+    "expected_fields": {
+      "packing_list_reference": "SYN-PL-001",
+      "container_number": "DEMU1234560",
+      "seal_number": "SYNSEAL001",
+      "goods_description": "Synthetic corrosive test liquid",
+      "packages": "48 drums",
+      "gross_weight_kg": "12480",
+      "un_number": "UN 1760",
+      "hazard_class": "8",
+      "consignee": "Harbour Demo Depot (fictional)"
+    },
+    "synthetic_only": true
+  },
+  {
+    "document_id": "001-SDS",
+    "case_id": "SYN-CASE-001",
+    "document_type": "sds_section_14",
+    "pdf_path": "documents/001-SDS_sds_section_14.pdf",
+    "clean_image_path": "images/clean/001-SDS.png",
+    "scan_like_image_path": "images/scan_like/001-SDS.png",
+    "expected_fields": {
+      "un_number": "UN 1760",
+      "proper_shipping_name": "CORROSIVE LIQUID, N.O.S.",
+      "hazard_class": "8",
+      "packing_group": "II",
+      "environmental_hazards": "Not stated in this synthetic example",
+      "product_identifier": "PG-SYN-CORR-01"
+    },
+    "synthetic_only": true
+  },
+  {
+    "document_id": "002-DG",
+    "case_id": "SYN-CASE-002",
+    "document_type": "dangerous_goods_declaration",
+    "pdf_path": "documents/002-DG_dangerous_goods_declaration.pdf",
+    "clean_image_path": "images/clean/002-DG.png",
+    "scan_like_image_path": "images/scan_like/002-DG.png",
+    "expected_fields": {
+      "container_number": "DEMU7654321",
+      "seal_number": "SYNSEAL002",
+      "un_number": "UN 3082",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "hazard_class": "9",
+      "packing_group": "III",
+      "packages": "20 IBCs",
+      "gross_weight_kg": "18600",
+      "shipper": "Sample Maritime Chemicals (fictional)",
+      "consignee": "Coastal Test Warehouse (fictional)"
+    },
+    "synthetic_only": true
+  },
+  {
+    "document_id": "002-SHIP",
+    "case_id": "SYN-CASE-002",
+    "document_type": "shipping_details_summary",
+    "pdf_path": "documents/002-SHIP_shipping_details_summary.pdf",
+    "clean_image_path": "images/clean/002-SHIP.png",
+    "scan_like_image_path": "images/scan_like/002-SHIP.png",
+    "expected_fields": {
+      "shipping_reference": "SYN-BL-002",
+      "container_number": "DEMU7654321",
+      "seal_number": "SYNSEAL002",
+      "shipper": "Sample Maritime Chemicals (fictional)",
+      "consignee": "Coastal Test Warehouse (fictional)",
+      "port_of_loading": "Hazira (illustrative)",
+      "port_of_discharge": "JNPA region (illustrative)",
+      "cargo_description": "Synthetic environmentally hazardous liquid",
+      "un_number": "UN 3082",
+      "hazard_class": "9"
+    },
+    "synthetic_only": true
+  },
+  {
+    "document_id": "002-PACK",
+    "case_id": "SYN-CASE-002",
+    "document_type": "packing_list",
+    "pdf_path": "documents/002-PACK_packing_list.pdf",
+    "clean_image_path": "images/clean/002-PACK.png",
+    "scan_like_image_path": "images/scan_like/002-PACK.png",
+    "expected_fields": {
+      "packing_list_reference": "SYN-PL-002",
+      "container_number": "DEMU7654321",
+      "seal_number": "SYNSEAL999",
+      "goods_description": "Synthetic environmentally hazardous liquid",
+      "packages": "20 IBCs",
+      "gross_weight_kg": "18600",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "consignee": "Coastal Test Warehouse (fictional)"
+    },
+    "synthetic_only": true
+  },
+  {
+    "document_id": "002-SDS",
+    "case_id": "SYN-CASE-002",
+    "document_type": "sds_section_14",
+    "pdf_path": "documents/002-SDS_sds_section_14.pdf",
+    "clean_image_path": "images/clean/002-SDS.png",
+    "scan_like_image_path": "images/scan_like/002-SDS.png",
+    "expected_fields": {
+      "un_number": "UN 3082",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "hazard_class": "9",
+      "packing_group": "III",
+      "environmental_hazards": "Yes (example field)",
+      "product_identifier": "PG-SYN-ENV-02"
+    },
+    "synthetic_only": true
+  },
+  {
+    "document_id": "003-DG",
+    "case_id": "SYN-CASE-003",
+    "document_type": "dangerous_goods_declaration",
+    "pdf_path": "documents/003-DG_dangerous_goods_declaration.pdf",
+    "clean_image_path": "images/clean/003-DG.png",
+    "scan_like_image_path": "images/scan_like/003-DG.png",
+    "expected_fields": {
+      "container_number": "DEMU2468106",
+      "seal_number": "SYNSEAL003",
+      "un_number": "UN 3082",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "hazard_class": "9",
+      "packing_group": "III",
+      "packages": "600 bags",
+      "gross_weight_kg": "15200",
+      "shipper": "Fictional Bulk Materials Co.",
+      "consignee": "Example Portside Receiver (fictional)"
+    },
+    "synthetic_only": true
+  },
+  {
+    "document_id": "003-SHIP",
+    "case_id": "SYN-CASE-003",
+    "document_type": "shipping_details_summary",
+    "pdf_path": "documents/003-SHIP_shipping_details_summary.pdf",
+    "clean_image_path": "images/clean/003-SHIP.png",
+    "scan_like_image_path": "images/scan_like/003-SHIP.png",
+    "expected_fields": {
+      "shipping_reference": "SYN-BL-003",
+      "container_number": "DEMU2468106",
+      "seal_number": "SYNSEAL003",
+      "shipper": "Fictional Bulk Materials Co.",
+      "consignee": "Example Portside Receiver (fictional)",
+      "port_of_loading": "Kandla (illustrative)",
+      "port_of_discharge": "JNPA region (illustrative)",
+      "cargo_description": "Synthetic environmentally hazardous solid",
+      "un_number": "UN 3077",
+      "hazard_class": "9"
+    },
+    "synthetic_only": true
+  },
+  {
+    "document_id": "003-PACK",
+    "case_id": "SYN-CASE-003",
+    "document_type": "packing_list",
+    "pdf_path": "documents/003-PACK_packing_list.pdf",
+    "clean_image_path": "images/clean/003-PACK.png",
+    "scan_like_image_path": "images/scan_like/003-PACK.png",
+    "expected_fields": {
+      "packing_list_reference": "SYN-PL-003",
+      "container_number": "DEMU2468106",
+      "seal_number": "SYNSEAL003",
+      "goods_description": "Synthetic environmentally hazardous solid",
+      "packages": "600 bags",
+      "gross_weight_kg": "15200",
+      "un_number": "UN 3077",
+      "hazard_class": "9",
+      "consignee": "Example Portside Receiver (fictional)"
+    },
+    "synthetic_only": true
+  },
+  {
+    "document_id": "003-SDS",
+    "case_id": "SYN-CASE-003",
+    "document_type": "sds_section_14",
+    "pdf_path": "documents/003-SDS_sds_section_14.pdf",
+    "clean_image_path": "images/clean/003-SDS.png",
+    "scan_like_image_path": "images/scan_like/003-SDS.png",
+    "expected_fields": {
+      "un_number": "UN 3082",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "hazard_class": "9",
+      "packing_group": "III",
+      "environmental_hazards": "Yes (example field)",
+      "product_identifier": "PG-SYN-ENV-03"
+    },
+    "synthetic_only": true
+  }
+]

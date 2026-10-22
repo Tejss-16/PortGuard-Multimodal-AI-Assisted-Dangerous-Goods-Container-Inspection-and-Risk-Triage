@@ -1,0 +1,40 @@
+{
+  "case_id": "PG202610222318234346",
+  "created_at": "2026-10-22T23:19:12+05:30",
+  "status": "Awaiting officer review",
+  "container_photo": "portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/input/container_photo.jpg",
+  "document_directory": "portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/scan_like/documents",
+  "document_ids": [
+    "001-DG",
+    "001-PACK",
+    "001-SDS",
+    "001-SHIP",
+    "002-DG",
+    "002-PACK",
+    "002-SDS",
+    "002-SHIP",
+    "003-DG",
+    "003-PACK",
+    "003-SDS",
+    "003-SHIP"
+  ],
+  "document_source_note": "All three synthetic document cases (001–003) were processed in one batch. Both clean and scan-like image variants are run automatically as separate comparison conditions; no image-quality selector is required. The container photo is a separate model demonstration input and has not been verified as belonging to any synthetic document case.",
+  "synthetic_reference_case": "ALL_001_003",
+  "document_quality_variants": [
+    "clean",
+    "scan_like"
+  ],
+  "review": {
+    "decision": "Pending",
+    "reviewer": "",
+    "notes": "",
+    "history": []
+  },
+  "artifacts": {
+    "report": "portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/integrated_inspection_report.json",
+    "ocr_raw": "portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/scan_like/ocr_raw.json",
+    "predictions": "portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/scan_like/predictions.json",
+    "consistency_report": "portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/scan_like/consistency_report.json",
+    "damage_visualization_dir": "portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/scan_like/damage_visualized"
+  }
+}

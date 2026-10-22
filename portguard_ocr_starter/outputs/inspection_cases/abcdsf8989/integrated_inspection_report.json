@@ -1,0 +1,216 @@
+{
+  "project": "PortGuard",
+  "purpose": "PortGuard inspection-case prototype test",
+  "integration_note": "Inspection case abcdsf8989. Synthetic starter test case 001, scan_like image set. The selected container photograph was manually associated for demo purposes; the dataset does not establish that they belong to the same physical shipment. The case grouping is supplied by the operator and has not been independently verified. This prototype does not establish cargo contents or make operational decisions.",
+  "safety_notice": "Synthetic starter documents and computer-vision outputs are for academic testing only. The report does not determine cargo contents or make an operational safety decision. A qualified human reviewer must inspect source material and resolve any findings.",
+  "container_damage_detection": {
+    "model_weights": "runs/detect/container_damage_detector/weights/best.pt",
+    "image": "portguard_ocr_starter/outputs/inspection_cases/abcdsf8989/input/container_photo.jpeg",
+    "confidence_threshold": 0.25,
+    "detections_count": 8,
+    "detections": [
+      {
+        "class_id": 1,
+        "class_name": "hole",
+        "confidence": 0.920221,
+        "bbox_xyxy_pixels": [
+          149.08,
+          234.67,
+          213.75,
+          296.27
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "hole",
+        "confidence": 0.596176,
+        "bbox_xyxy_pixels": [
+          136.97,
+          52.08,
+          229.33,
+          96.23
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "rust",
+        "confidence": 0.578339,
+        "bbox_xyxy_pixels": [
+          319.48,
+          29.48,
+          366.73,
+          250.66
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "hole",
+        "confidence": 0.519864,
+        "bbox_xyxy_pixels": [
+          198.07,
+          134.62,
+          230.01,
+          177.0
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "rust",
+        "confidence": 0.387006,
+        "bbox_xyxy_pixels": [
+          35.88,
+          149.9,
+          61.09,
+          177.37
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "hole",
+        "confidence": 0.368228,
+        "bbox_xyxy_pixels": [
+          166.82,
+          154.48,
+          185.83,
+          174.66
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "rust",
+        "confidence": 0.345688,
+        "bbox_xyxy_pixels": [
+          111.5,
+          134.89,
+          140.84,
+          364.0
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "rust",
+        "confidence": 0.30128,
+        "bbox_xyxy_pixels": [
+          24.72,
+          48.76,
+          58.75,
+          104.77
+        ]
+      }
+    ],
+    "visualization_dir": "portguard_ocr_starter/outputs/inspection_cases/abcdsf8989/damage_visualized"
+  },
+  "document_processing": {
+    "document_image_directory": "portguard_ocr_starter/outputs/inspection_cases/abcdsf8989/documents",
+    "documents_processed": 4,
+    "raw_ocr_output": "portguard_ocr_starter/outputs/inspection_cases/abcdsf8989/ocr_raw.json",
+    "structured_predictions_output": "portguard_ocr_starter/outputs/inspection_cases/abcdsf8989/predictions.json",
+    "predictions": [
+      {
+        "document_id": "abcdsf8989-DG",
+        "fields": {
+          "container_number": "DEMU1234560",
+          "seal_number": "SYNSEAL001",
+          "un_number": "UN 1760",
+          "hazard_class": "8",
+          "proper_shipping_name": "CORROSIVE LIQUID, N.O.S.",
+          "packing_group": "I",
+          "packages": "48 drums",
+          "gross_weight_kg": "12480",
+          "shipper": "Example Chemicals Ltd. (fictional)",
+          "consignee": "Harbour Demo Depot (fictional)"
+        }
+      },
+      {
+        "document_id": "abcdsf8989-PACK",
+        "fields": {
+          "container_number": "DEMU1234560",
+          "seal_number": "SYNSEAL001",
+          "un_number": "UN 1760",
+          "hazard_class": "8",
+          "packing_list_reference": "SYN-PL-001",
+          "goods_description": "Synthetic corrosive test liquid",
+          "packages": "48 drums",
+          "gross_weight_kg": "12480",
+          "consignee": "Harbour Demo Depot (fictional)"
+        }
+      },
+      {
+        "document_id": "abcdsf8989-SDS",
+        "fields": {
+          "container_number": "",
+          "seal_number": "",
+          "un_number": "UN 1760",
+          "hazard_class": "8",
+          "proper_shipping_name": "CORROSIVE LIQUID, N.O.S.",
+          "packing_group": "II",
+          "environmental_hazards": "Not stated in this synthetic example",
+          "product_identifier": "PG-SYN-CORR-01"
+        }
+      },
+      {
+        "document_id": "abcdsf8989-SHIP",
+        "fields": {
+          "container_number": "DEMU1234560",
+          "seal_number": "SYNSEAL001",
+          "un_number": "UN 1760",
+          "hazard_class": "8",
+          "shipping_reference": "SYN-BL-001",
+          "shipper": "Example Chemicals Ltd. (fictional)",
+          "consignee": "Harbour Demo Depot (fictional)",
+          "port_of_loading": "Mundra (illustrative)",
+          "port_of_discharge": "JNPA region (illustrative)",
+          "cargo_description": "Synthetic corrosive test liquid"
+        }
+      }
+    ]
+  },
+  "consistency_check": {
+    "report_path": "portguard_ocr_starter/outputs/inspection_cases/abcdsf8989/consistency_report.json",
+    "summary": {
+      "match": 4,
+      "possible_ocr_error": 1,
+      "value_disagreement": 0,
+      "missing_value": 0,
+      "insufficient_sources": 0
+    },
+    "findings": [
+      {
+        "case_id": "abcdsf8989",
+        "field": "packing_group",
+        "classification": "possible_ocr_error",
+        "observations": [
+          {
+            "document_id": "abcdsf8989-DG",
+            "document_type": "DG",
+            "value": "I",
+            "normalized_value": "I"
+          },
+          {
+            "document_id": "abcdsf8989-SDS",
+            "document_type": "SDS",
+            "value": "II",
+            "normalized_value": "II"
+          }
+        ],
+        "missing_documents": [],
+        "reason": "Packing-group values differ by Roman-numeral-like tokens. OCR confusion is possible, but a real source-document disagreement is also possible; inspect the original images.",
+        "automatic_correction": false
+      }
+    ],
+    "automatic_correction": false
+  },
+  "case_metadata": {
+    "case_id": "abcdsf8989",
+    "case_folder": "portguard_ocr_starter/outputs/inspection_cases/abcdsf8989",
+    "container_photo": "portguard_ocr_starter/outputs/inspection_cases/abcdsf8989/input/container_photo.jpeg",
+    "document_directory": "portguard_ocr_starter/outputs/inspection_cases/abcdsf8989/documents",
+    "document_ids": [
+      "abcdsf8989-DG",
+      "abcdsf8989-PACK",
+      "abcdsf8989-SDS",
+      "abcdsf8989-SHIP"
+    ],
+    "association_method": "operator-selected/manual; not independently verified"
+  }
+}

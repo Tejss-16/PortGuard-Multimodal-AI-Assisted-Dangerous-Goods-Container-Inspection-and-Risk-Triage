@@ -1,0 +1,13 @@
+﻿document_id,case_id,document_type,pdf_path,clean_image_path,scan_like_image_path,field_count,synthetic_only
+001-DG,SYN-CASE-001,dangerous_goods_declaration,documents/001-DG_dangerous_goods_declaration.pdf,images/clean/001-DG.png,images/scan_like/001-DG.png,10,True
+001-SHIP,SYN-CASE-001,shipping_details_summary,documents/001-SHIP_shipping_details_summary.pdf,images/clean/001-SHIP.png,images/scan_like/001-SHIP.png,10,True
+001-PACK,SYN-CASE-001,packing_list,documents/001-PACK_packing_list.pdf,images/clean/001-PACK.png,images/scan_like/001-PACK.png,9,True
+001-SDS,SYN-CASE-001,sds_section_14,documents/001-SDS_sds_section_14.pdf,images/clean/001-SDS.png,images/scan_like/001-SDS.png,6,True
+002-DG,SYN-CASE-002,dangerous_goods_declaration,documents/002-DG_dangerous_goods_declaration.pdf,images/clean/002-DG.png,images/scan_like/002-DG.png,10,True
+002-SHIP,SYN-CASE-002,shipping_details_summary,documents/002-SHIP_shipping_details_summary.pdf,images/clean/002-SHIP.png,images/scan_like/002-SHIP.png,10,True
+002-PACK,SYN-CASE-002,packing_list,documents/002-PACK_packing_list.pdf,images/clean/002-PACK.png,images/scan_like/002-PACK.png,9,True
+002-SDS,SYN-CASE-002,sds_section_14,documents/002-SDS_sds_section_14.pdf,images/clean/002-SDS.png,images/scan_like/002-SDS.png,6,True
+003-DG,SYN-CASE-003,dangerous_goods_declaration,documents/003-DG_dangerous_goods_declaration.pdf,images/clean/003-DG.png,images/scan_like/003-DG.png,10,True
+003-SHIP,SYN-CASE-003,shipping_details_summary,documents/003-SHIP_shipping_details_summary.pdf,images/clean/003-SHIP.png,images/scan_like/003-SHIP.png,10,True
+003-PACK,SYN-CASE-003,packing_list,documents/003-PACK_packing_list.pdf,images/clean/003-PACK.png,images/scan_like/003-PACK.png,9,True
+003-SDS,SYN-CASE-003,sds_section_14,documents/003-SDS_sds_section_14.pdf,images/clean/003-SDS.png,images/scan_like/003-SDS.png,6,True

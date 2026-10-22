@@ -1,0 +1,59 @@
+[
+  {
+    "document_id": "PG20261022095747-DG",
+    "fields": {
+      "container_number": "DEMU2468106",
+      "seal_number": "SYNSEAL003",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "packing_group": "",
+      "packages": "600 bags",
+      "gross_weight_kg": "15200",
+      "shipper": "Fictional Bulk Materials Co.",
+      "consignee": "Example Portside Receiver (fictional)"
+    }
+  },
+  {
+    "document_id": "PG20261022095747-PACK",
+    "fields": {
+      "container_number": "DEMU2468106",
+      "seal_number": "SYNSEAL003",
+      "un_number": "UN 3077",
+      "hazard_class": "9",
+      "packing_list_reference": "SYN-PL-003",
+      "goods_description": "Synthetic environmentally hazardous solid",
+      "packages": "600 bags",
+      "gross_weight_kg": "15200",
+      "consignee": "Example Portside Receiver (fictional)"
+    }
+  },
+  {
+    "document_id": "PG20261022095747-SDS",
+    "fields": {
+      "container_number": "",
+      "seal_number": "",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "packing_group": "III",
+      "environmental_hazards": "Yes (example field)",
+      "product_identifier": "PG-SYN-ENV-03"
+    }
+  },
+  {
+    "document_id": "PG20261022095747-SHIP",
+    "fields": {
+      "container_number": "DEMU2468106",
+      "seal_number": "SYNSEAL003",
+      "un_number": "UN 3077",
+      "hazard_class": "9",
+      "shipping_reference": "SYN-BL-003",
+      "shipper": "Fictional Bulk Materials Co.",
+      "consignee": "Example Portside Receiver (fictional)",
+      "port_of_loading": "Kandla (illustrative)",
+      "port_of_discharge": "JNPA region (illustrative)",
+      "cargo_description": "Synthetic environmentally hazardous solid"
+    }
+  }
+]

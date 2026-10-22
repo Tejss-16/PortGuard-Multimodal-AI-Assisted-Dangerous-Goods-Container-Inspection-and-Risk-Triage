@@ -1,0 +1,59 @@
+[
+  {
+    "document_id": "abcdsf8989-DG",
+    "fields": {
+      "container_number": "DEMU1234560",
+      "seal_number": "SYNSEAL001",
+      "un_number": "UN 1760",
+      "hazard_class": "8",
+      "proper_shipping_name": "CORROSIVE LIQUID, N.O.S.",
+      "packing_group": "I",
+      "packages": "48 drums",
+      "gross_weight_kg": "12480",
+      "shipper": "Example Chemicals Ltd. (fictional)",
+      "consignee": "Harbour Demo Depot (fictional)"
+    }
+  },
+  {
+    "document_id": "abcdsf8989-PACK",
+    "fields": {
+      "container_number": "DEMU1234560",
+      "seal_number": "SYNSEAL001",
+      "un_number": "UN 1760",
+      "hazard_class": "8",
+      "packing_list_reference": "SYN-PL-001",
+      "goods_description": "Synthetic corrosive test liquid",
+      "packages": "48 drums",
+      "gross_weight_kg": "12480",
+      "consignee": "Harbour Demo Depot (fictional)"
+    }
+  },
+  {
+    "document_id": "abcdsf8989-SDS",
+    "fields": {
+      "container_number": "",
+      "seal_number": "",
+      "un_number": "UN 1760",
+      "hazard_class": "8",
+      "proper_shipping_name": "CORROSIVE LIQUID, N.O.S.",
+      "packing_group": "II",
+      "environmental_hazards": "Not stated in this synthetic example",
+      "product_identifier": "PG-SYN-CORR-01"
+    }
+  },
+  {
+    "document_id": "abcdsf8989-SHIP",
+    "fields": {
+      "container_number": "DEMU1234560",
+      "seal_number": "SYNSEAL001",
+      "un_number": "UN 1760",
+      "hazard_class": "8",
+      "shipping_reference": "SYN-BL-001",
+      "shipper": "Example Chemicals Ltd. (fictional)",
+      "consignee": "Harbour Demo Depot (fictional)",
+      "port_of_loading": "Mundra (illustrative)",
+      "port_of_discharge": "JNPA region (illustrative)",
+      "cargo_description": "Synthetic corrosive test liquid"
+    }
+  }
+]

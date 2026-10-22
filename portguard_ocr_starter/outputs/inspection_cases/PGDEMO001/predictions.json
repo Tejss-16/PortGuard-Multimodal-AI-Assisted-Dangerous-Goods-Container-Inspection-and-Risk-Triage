@@ -1,0 +1,59 @@
+[
+  {
+    "document_id": "PGDEMO001-DG",
+    "fields": {
+      "container_number": "DEMU7654321",
+      "seal_number": "SYNSEAL002",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "packing_group": "III",
+      "packages": "20 IBCs",
+      "gross_weight_kg": "18600",
+      "shipper": "Sample Maritime Chemicals (fictional)",
+      "consignee": "Coastal Test Warehouse (fictional)"
+    }
+  },
+  {
+    "document_id": "PGDEMO001-PACK",
+    "fields": {
+      "container_number": "DEMU7654321",
+      "seal_number": "SYNSEAL999",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "packing_list_reference": "SYN-PL-002",
+      "goods_description": "Synthetic environmentally hazardous liquid",
+      "packages": "20 IBCs",
+      "gross_weight_kg": "18600",
+      "consignee": "Coastal Test Warehouse (fictional)"
+    }
+  },
+  {
+    "document_id": "PGDEMO001-SDS",
+    "fields": {
+      "container_number": "",
+      "seal_number": "",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "packing_group": "II",
+      "environmental_hazards": "Yes (example field)",
+      "product_identifier": "PG-SYN-ENV-02"
+    }
+  },
+  {
+    "document_id": "PGDEMO001-SHIP",
+    "fields": {
+      "container_number": "DEMU7654321",
+      "seal_number": "SYNSEAL002",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "shipping_reference": "SYN-BL-002",
+      "shipper": "Sample Maritime Chemicals (fictional)",
+      "consignee": "Coastal Test Warehouse (fictional)",
+      "port_of_loading": "Hazira (illustrative)",
+      "port_of_discharge": "JNPA region (illustrative)",
+      "cargo_description": "Synthetic environmentally hazardous liquid"
+    }
+  }
+]

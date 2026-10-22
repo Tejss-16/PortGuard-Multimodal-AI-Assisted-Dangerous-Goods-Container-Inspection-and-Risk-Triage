@@ -1,0 +1,182 @@
+[
+  {
+    "document_id": "001-DG",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/001-DG.png",
+    "ocr_text": "NOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\nDangerous-Goods Declaration - Mock Data Sheet\nDocument ID: 001-DG Linked test case: SYN-CASE-001\nCONTAINER NUMBER SEAL NUMBER\nDEMU1234560 SYNSEALO01\nUN NUMBER PROPER SHIPPING NAME\nUN 1760 CORROSIVE LIQUID, N.O.S.\nHAZARD CLASS PACKING GROUP\n8 ll\nPACKAGES / PACKAGING GROSS MASS (KG)\n48 drums 12480\nSHIPPER CONSIGNEE\nExample Chemicals Ltd. (fictional) Harbour Demo Depot (fictional)\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions.",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.45,
+      "edge_stddev": 29.6,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 446,
+      "source_file": "001-DG.png"
+    }
+  },
+  {
+    "document_id": "001-PACK",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/001-PACK.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\nPacking List - Mock Data Sheet\nDocument ID: 001-PACK Linked test case: SYN-CASE-001\n\nPacking list reference SYN-PL-001\n\nContainer number DEMU1234560\n\nSeal number SYNSEALO01\n\nGoods description Synthetic corrosive test liquid\n\nPackage count / type 48 drums\n\nGross weight (kg) 12480\n\nUN number shown UN 1760\n\nHazard class shown 8\n\nConsignee Harbour Demo Depot (fictional)\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions.",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 67.21,
+      "edge_stddev": 29.88,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 411,
+      "source_file": "001-PACK.png"
+    }
+  },
+  {
+    "document_id": "001-SDS",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/001-SDS.png",
+    "ocr_text": "NOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\nSDS Section 14 - Transport Information Extract\nDocument ID: 001-SDS __ Linked test case: SYN-CASE-001\n14.1 UN number or ID number UN 1760\n14.2 UN proper shipping name CORROSIVE LIQUID, N.O.S.\n14.3 Transport hazard class(es) 8\n14.4 Packing group (if applicable) ||\n14.5 Environmental hazards Not stated in this synthetic example\nProduct identifier PG-SYN-CORR-01\nTest note Synthetic excerpt for OCR pipeline testing; not a safety data sheet for a real\nproduct.\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.53,
+      "edge_stddev": 30.26,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 499,
+      "source_file": "001-SDS.png"
+    }
+  },
+  {
+    "document_id": "001-SHIP",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/001-SHIP.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\nShipping Details Summary - Mock Data Sheet\nDocument ID: 001-SHIP Linked test case: SYN-CASE-001\n\nShipping reference SYN-BL-001\n\nContainer number DEMU1234560\n\nSeal number SYNSEALO01\n\nShipper Example Chemicals Ltd. (fictional)\n\nConsignee Harbour Demo Depot (fictional)\n\nPort of loading Mundra (illustrative)\n\nPort of discharge JNPA region (illustrative)\n\nCargo description Synthetic corrosive test liquid\n\nUN number (declared) UN 1760\n\nHazard class (declared) 8\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.45,
+      "edge_stddev": 30.6,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 487,
+      "source_file": "001-SHIP.png"
+    }
+  },
+  {
+    "document_id": "002-DG",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/002-DG.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\nDangerous-Goods Declaration - Mock Data Sheet\nDocument ID: 002-DG Linked test case: SYN-CASE-002\nContainer number DEMU7654321\nSeal number SYNSEALO002\nUN number UN 3082\nProper shipping name ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.\nHazard class 9\nPacking group lll\nPackages / packaging 20 IBCs\nGross mass (kg) 18600\nShipper Sample Maritime Chemicals (fictional)\nConsignee Coastal Test Warehouse (fictional)\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.55,
+      "edge_stddev": 30.63,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 458,
+      "source_file": "002-DG.png"
+    }
+  },
+  {
+    "document_id": "002-PACK",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/002-PACK.png",
+    "ocr_text": "NOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\nPacking List - Mock Data Sheet\nDocument ID: 002-PACK Linked test case: SYN-CASE-002\nPacking list reference SYN-PL-002\nContainer number DEMU7654321\nSeal number SYNSEAL999\nGoods description Synthetic environmentally hazardous liquid\nPackage count / type 20 IBCs\nGross weight (kg) 18600\nUN number shown UN 3082\nHazard class shown 9\nConsignee Coastal Test Warehouse (fictional)\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions.",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.13,
+      "edge_stddev": 29.24,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 446,
+      "source_file": "002-PACK.png"
+    }
+  },
+  {
+    "document_id": "002-SDS",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/002-SDS.png",
+    "ocr_text": "NOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\nSDS Section 14 - Transport Information Extract\nDocument ID: 002-SDS__Linked test case: SYN-CASE-002\n14.1 UN number or ID number\nUN 3082\n14.2 UN proper shipping name\nENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.\n14.3 Transport hazard class(es)\n9\n14.4 Packing group (if applicable)\nIll\n14.5 Environmental hazards\nYes (example field)\nProduct identifier\nPG-SYN-ENV-02\nTest note\nSynthetic excerpt for OCR pipeline testing; not a safety data sheet for a real product.\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.98,
+      "edge_stddev": 30.83,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 509,
+      "source_file": "002-SDS.png"
+    }
+  },
+  {
+    "document_id": "002-SHIP",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/002-SHIP.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\nShipping Details Summary - Mock Data Sheet\nDocument ID: 002-SHIP _Linked test case: SYN-CASE-002\nShipping reference SYN-BL-002\nContainer number DEMU7654321\nSeal number SYNSEAL002\nShipper Sample Maritime Chemicals (fictional)\nConsignee Coastal Test Warehouse (fictional)\nPort of loading Hazira (illustrative)\nPort of discharge JNPA region (illustrative)\nCargo description Synthetic environmentally hazardous liquid\nUN number (declared) UN 3082\nHazard class (declared) 9\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.87,
+      "edge_stddev": 31.06,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 506,
+      "source_file": "002-SHIP.png"
+    }
+  },
+  {
+    "document_id": "003-DG",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/003-DG.png",
+    "ocr_text": "NOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\nDangerous-Goods Declaration - Mock Data Sheet\nDocument ID: 003-DG__Linked test case: SYN-CASE-003\n\nCONTAINER NUMBER SEAL NUMBER\n\nDEMU2468106 SYNSEAL003\n\nUN NUMBER PROPER SHIPPING NAME\n\nUN 3082 ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID,\n\nN.O.S.\n\nHAZARD CLASS PACKING GROUP\n\n@ Il\n\nPACKAGES / PACKAGING GROSS MASS (KG)\n\n600 bags 15200\n\nSHIPPER CONSIGNEE\n\nFictional Bulk Materials Co. Example Portside Receiver (fictional)\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions.",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.58,
+      "edge_stddev": 30.33,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 472,
+      "source_file": "003-DG.png"
+    }
+  },
+  {
+    "document_id": "003-PACK",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/003-PACK.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\nPacking List - Mock Data Sheet\nDocument ID: 003-PACK Linked test case: SYN-CASE-003\nPacking list reference SYN-PL-003\nContainer number DEMU2468106\nSeal number SYNSEALO003\nGoods description Synthetic environmentally hazardous solid\nPackage count / type 600 bags\nGross weight (kg) 15200\nUN number shown UN 3077\nHazard class shown 9\nConsignee Example Portside Receiver (fictional)\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions.",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 67.29,
+      "edge_stddev": 30.31,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 429,
+      "source_file": "003-PACK.png"
+    }
+  },
+  {
+    "document_id": "003-SDS",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/003-SDS.png",
+    "ocr_text": "NOT AN OFFICIAL CUSTOMS, CARRIER OR HAZARDOUS-GOODS FORM\nSDS Section 14 - Transport Information Extract\nDocument ID: 003-SDS __Linked test case: SYN-CASE-003\n14.1 UN number or ID number UN 3082\n14.2 UN proper shipping name ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.\n14.3 Transport hazard class(es) 9\n14.4 Packing group (if applicable) III\n14.5 Environmental hazards Yes (example field)\nProduct identifier PG-SYN-ENV-03\nTest note Synthetic excerpt for OCR pipeline testing; not a safety data sheet for a real\nproduct.\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.62,
+      "edge_stddev": 30.71,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 509,
+      "source_file": "003-SDS.png"
+    }
+  },
+  {
+    "document_id": "003-SHIP",
+    "image_path": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/document_quality_runs/clean/documents/003-SHIP.png",
+    "ocr_text": "PORTGUARD | SYNTHETIC TEST DATA\nShipping Details Summary - Mock Data Sheet\nDocument ID: 003-SHIP _Linked test case: SYN-CASE-003\nShipping reference SYN-BL-003\nContainer number DEMU2468106\nSeal number SYNSEALO003\nShipper Fictional Bulk Materials Co.\nConsignee Example Portside Receiver (fictional)\nPort of loading Kandla (illustrative)\nPort of discharge JNPA region (illustrative)\nCargo description Synthetic environmentally hazardous solid\nUN number (declared) UN 3077\nHazard class (declared) 9\nFor OCR and information-extraction development only. Do not use for operational, customs or safety decisions",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.5,
+      "edge_stddev": 30.89,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 501,
+      "source_file": "003-SHIP.png"
+    }
+  }
+]

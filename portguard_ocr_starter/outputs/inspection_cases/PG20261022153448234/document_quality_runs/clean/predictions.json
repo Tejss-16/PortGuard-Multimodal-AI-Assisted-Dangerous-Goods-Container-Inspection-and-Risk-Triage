@@ -1,0 +1,317 @@
+[
+  {
+    "document_id": "001-DG",
+    "fields": {
+      "container_number": "DEMU1234560",
+      "seal_number": "SYNSEAL001",
+      "un_number": "UN 1760",
+      "hazard_class": "8",
+      "proper_shipping_name": "CORROSIVE LIQUID, N.O.S.",
+      "packing_group": "II",
+      "packages": "48 drums",
+      "gross_weight_kg": "12480",
+      "shipper": "Example Chemicals Ltd. (fictional)",
+      "consignee": "Harbour Demo Depot (fictional)"
+    },
+    "source_format": "image",
+    "source_file": "001-DG.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.45,
+      "edge_stddev": 29.6,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 446,
+      "source_file": "001-DG.png"
+    }
+  },
+  {
+    "document_id": "001-PACK",
+    "fields": {
+      "container_number": "DEMU1234560",
+      "seal_number": "SYNSEAL001",
+      "un_number": "UN 1760",
+      "hazard_class": "8",
+      "packing_list_reference": "SYN-PL-001",
+      "goods_description": "Synthetic corrosive test liquid",
+      "packages": "48 drums",
+      "gross_weight_kg": "12480",
+      "consignee": "Harbour Demo Depot (fictional)"
+    },
+    "source_format": "image",
+    "source_file": "001-PACK.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 67.21,
+      "edge_stddev": 29.88,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 411,
+      "source_file": "001-PACK.png"
+    }
+  },
+  {
+    "document_id": "001-SDS",
+    "fields": {
+      "container_number": "",
+      "seal_number": "",
+      "un_number": "UN 1760",
+      "hazard_class": "8",
+      "proper_shipping_name": "CORROSIVE LIQUID, N.O.S.",
+      "packing_group": "II",
+      "environmental_hazards": "Not stated in this synthetic example",
+      "product_identifier": "PG-SYN-CORR-01"
+    },
+    "source_format": "image",
+    "source_file": "001-SDS.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.53,
+      "edge_stddev": 30.26,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 499,
+      "source_file": "001-SDS.png"
+    }
+  },
+  {
+    "document_id": "001-SHIP",
+    "fields": {
+      "container_number": "DEMU1234560",
+      "seal_number": "SYNSEAL001",
+      "un_number": "UN 1760",
+      "hazard_class": "8",
+      "shipping_reference": "SYN-BL-001",
+      "shipper": "Example Chemicals Ltd. (fictional)",
+      "consignee": "Harbour Demo Depot (fictional)",
+      "port_of_loading": "Mundra (illustrative)",
+      "port_of_discharge": "JNPA region (illustrative)",
+      "cargo_description": "Synthetic corrosive test liquid"
+    },
+    "source_format": "image",
+    "source_file": "001-SHIP.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.45,
+      "edge_stddev": 30.6,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 487,
+      "source_file": "001-SHIP.png"
+    }
+  },
+  {
+    "document_id": "002-DG",
+    "fields": {
+      "container_number": "DEMU7654321",
+      "seal_number": "SYNSEAL002",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "packing_group": "III",
+      "packages": "20 IBCs",
+      "gross_weight_kg": "18600",
+      "shipper": "Sample Maritime Chemicals (fictional)",
+      "consignee": "Coastal Test Warehouse (fictional)"
+    },
+    "source_format": "image",
+    "source_file": "002-DG.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.55,
+      "edge_stddev": 30.63,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 458,
+      "source_file": "002-DG.png"
+    }
+  },
+  {
+    "document_id": "002-PACK",
+    "fields": {
+      "container_number": "DEMU7654321",
+      "seal_number": "SYNSEAL999",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "packing_list_reference": "SYN-PL-002",
+      "goods_description": "Synthetic environmentally hazardous liquid",
+      "packages": "20 IBCs",
+      "gross_weight_kg": "18600",
+      "consignee": "Coastal Test Warehouse (fictional)"
+    },
+    "source_format": "image",
+    "source_file": "002-PACK.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.13,
+      "edge_stddev": 29.24,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 446,
+      "source_file": "002-PACK.png"
+    }
+  },
+  {
+    "document_id": "002-SDS",
+    "fields": {
+      "container_number": "",
+      "seal_number": "",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "packing_group": "III",
+      "environmental_hazards": "Yes (example field)",
+      "product_identifier": "PG-SYN-ENV-02"
+    },
+    "source_format": "image",
+    "source_file": "002-SDS.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.98,
+      "edge_stddev": 30.83,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 509,
+      "source_file": "002-SDS.png"
+    }
+  },
+  {
+    "document_id": "002-SHIP",
+    "fields": {
+      "container_number": "DEMU7654321",
+      "seal_number": "SYNSEAL002",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "shipping_reference": "SYN-BL-002",
+      "shipper": "Sample Maritime Chemicals (fictional)",
+      "consignee": "Coastal Test Warehouse (fictional)",
+      "port_of_loading": "Hazira (illustrative)",
+      "port_of_discharge": "JNPA region (illustrative)",
+      "cargo_description": "Synthetic environmentally hazardous liquid"
+    },
+    "source_format": "image",
+    "source_file": "002-SHIP.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.87,
+      "edge_stddev": 31.06,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 506,
+      "source_file": "002-SHIP.png"
+    }
+  },
+  {
+    "document_id": "003-DG",
+    "fields": {
+      "container_number": "DEMU2468106",
+      "seal_number": "SYNSEAL003",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "packing_group": "III",
+      "packages": "600 bags",
+      "gross_weight_kg": "15200",
+      "shipper": "Fictional Bulk Materials Co.",
+      "consignee": "Example Portside Receiver (fictional)"
+    },
+    "source_format": "image",
+    "source_file": "003-DG.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.58,
+      "edge_stddev": 30.33,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 472,
+      "source_file": "003-DG.png"
+    }
+  },
+  {
+    "document_id": "003-PACK",
+    "fields": {
+      "container_number": "DEMU2468106",
+      "seal_number": "SYNSEAL003",
+      "un_number": "UN 3077",
+      "hazard_class": "9",
+      "packing_list_reference": "SYN-PL-003",
+      "goods_description": "Synthetic environmentally hazardous solid",
+      "packages": "600 bags",
+      "gross_weight_kg": "15200",
+      "consignee": "Example Portside Receiver (fictional)"
+    },
+    "source_format": "image",
+    "source_file": "003-PACK.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 67.29,
+      "edge_stddev": 30.31,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 429,
+      "source_file": "003-PACK.png"
+    }
+  },
+  {
+    "document_id": "003-SDS",
+    "fields": {
+      "container_number": "",
+      "seal_number": "",
+      "un_number": "UN 3082",
+      "hazard_class": "9",
+      "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+      "packing_group": "III",
+      "environmental_hazards": "Yes (example field)",
+      "product_identifier": "PG-SYN-ENV-03"
+    },
+    "source_format": "image",
+    "source_file": "003-SDS.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.62,
+      "edge_stddev": 30.71,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 509,
+      "source_file": "003-SDS.png"
+    }
+  },
+  {
+    "document_id": "003-SHIP",
+    "fields": {
+      "container_number": "DEMU2468106",
+      "seal_number": "SYNSEAL003",
+      "un_number": "UN 3077",
+      "hazard_class": "9",
+      "shipping_reference": "SYN-BL-003",
+      "shipper": "Fictional Bulk Materials Co.",
+      "consignee": "Example Portside Receiver (fictional)",
+      "port_of_loading": "Kandla (illustrative)",
+      "port_of_discharge": "JNPA region (illustrative)",
+      "cargo_description": "Synthetic environmentally hazardous solid"
+    },
+    "source_format": "image",
+    "source_file": "003-SHIP.png",
+    "quality_assessment": {
+      "quality_assessment": "clean",
+      "contrast_stddev": 61.5,
+      "edge_stddev": 30.89,
+      "assessment_note": "Heuristic based on grayscale contrast and edge variation; not a validated quality classifier.",
+      "preprocessing": "original image",
+      "ocr_method": "Tesseract OCR",
+      "recognized_alphanumeric_characters": 501,
+      "source_file": "003-SHIP.png"
+    }
+  }
+]

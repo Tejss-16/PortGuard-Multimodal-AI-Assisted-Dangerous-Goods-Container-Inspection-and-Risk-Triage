@@ -1,0 +1,14 @@
+{
+  "document_count": 12,
+  "case_count": 3,
+  "pdf_count": 12,
+  "clean_image_count": 12,
+  "scan_like_image_count": 12,
+  "document_types": [
+    "dangerous_goods_declaration",
+    "packing_list",
+    "sds_section_14",
+    "shipping_details_summary"
+  ],
+  "ground_truth_field_count": 105
+}

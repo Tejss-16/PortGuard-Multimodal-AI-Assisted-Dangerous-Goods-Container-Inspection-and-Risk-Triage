@@ -1,0 +1,191 @@
+{
+  "project": "PortGuard",
+  "purpose": "PortGuard inspection-case prototype test",
+  "integration_note": "Inspection case PG20261022095747. Synthetic starter test case 003, scan_like image set. The selected container photograph was manually associated for demo purposes; the dataset does not establish that they belong to the same physical shipment. The case grouping is supplied by the operator and has not been independently verified. This prototype does not establish cargo contents or make operational decisions.",
+  "safety_notice": "Synthetic starter documents and computer-vision outputs are for academic testing only. The report does not determine cargo contents or make an operational safety decision. A qualified human reviewer must inspect source material and resolve any findings.",
+  "container_damage_detection": {
+    "model_weights": "runs/detect/container_damage_detector/weights/best.pt",
+    "image": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/input/container_photo.jpg",
+    "confidence_threshold": 0.25,
+    "detections_count": 3,
+    "detections": [
+      {
+        "class_id": 2,
+        "class_name": "rust",
+        "confidence": 0.41937,
+        "bbox_xyxy_pixels": [
+          204.59,
+          48.92,
+          342.92,
+          206.0
+        ]
+      },
+      {
+        "class_id": 1,
+        "class_name": "hole",
+        "confidence": 0.300163,
+        "bbox_xyxy_pixels": [
+          281.76,
+          363.17,
+          311.0,
+          399.41
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "rust",
+        "confidence": 0.267413,
+        "bbox_xyxy_pixels": [
+          264.38,
+          348.42,
+          333.95,
+          405.83
+        ]
+      }
+    ],
+    "visualization_dir": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/damage_visualized"
+  },
+  "document_processing": {
+    "document_image_directory": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/documents",
+    "documents_processed": 4,
+    "raw_ocr_output": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/ocr_raw.json",
+    "structured_predictions_output": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/predictions.json",
+    "predictions": [
+      {
+        "document_id": "PG20261022095747-DG",
+        "fields": {
+          "container_number": "DEMU2468106",
+          "seal_number": "SYNSEAL003",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+          "packing_group": "",
+          "packages": "600 bags",
+          "gross_weight_kg": "15200",
+          "shipper": "Fictional Bulk Materials Co.",
+          "consignee": "Example Portside Receiver (fictional)"
+        }
+      },
+      {
+        "document_id": "PG20261022095747-PACK",
+        "fields": {
+          "container_number": "DEMU2468106",
+          "seal_number": "SYNSEAL003",
+          "un_number": "UN 3077",
+          "hazard_class": "9",
+          "packing_list_reference": "SYN-PL-003",
+          "goods_description": "Synthetic environmentally hazardous solid",
+          "packages": "600 bags",
+          "gross_weight_kg": "15200",
+          "consignee": "Example Portside Receiver (fictional)"
+        }
+      },
+      {
+        "document_id": "PG20261022095747-SDS",
+        "fields": {
+          "container_number": "",
+          "seal_number": "",
+          "un_number": "UN 3082",
+          "hazard_class": "9",
+          "proper_shipping_name": "ENVIRONMENTALLY HAZARDOUS SUBSTANCE, LIQUID, N.O.S.",
+          "packing_group": "III",
+          "environmental_hazards": "Yes (example field)",
+          "product_identifier": "PG-SYN-ENV-03"
+        }
+      },
+      {
+        "document_id": "PG20261022095747-SHIP",
+        "fields": {
+          "container_number": "DEMU2468106",
+          "seal_number": "SYNSEAL003",
+          "un_number": "UN 3077",
+          "hazard_class": "9",
+          "shipping_reference": "SYN-BL-003",
+          "shipper": "Fictional Bulk Materials Co.",
+          "consignee": "Example Portside Receiver (fictional)",
+          "port_of_loading": "Kandla (illustrative)",
+          "port_of_discharge": "JNPA region (illustrative)",
+          "cargo_description": "Synthetic environmentally hazardous solid"
+        }
+      }
+    ]
+  },
+  "consistency_check": {
+    "report_path": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/consistency_report.json",
+    "summary": {
+      "match": 3,
+      "possible_ocr_error": 0,
+      "value_disagreement": 1,
+      "missing_value": 1,
+      "insufficient_sources": 0
+    },
+    "findings": [
+      {
+        "case_id": "PG20261022095747",
+        "field": "un_number",
+        "classification": "value_disagreement",
+        "observations": [
+          {
+            "document_id": "PG20261022095747-DG",
+            "document_type": "DG",
+            "value": "UN 3082",
+            "normalized_value": "UN 3082"
+          },
+          {
+            "document_id": "PG20261022095747-PACK",
+            "document_type": "PACK",
+            "value": "UN 3077",
+            "normalized_value": "UN 3077"
+          },
+          {
+            "document_id": "PG20261022095747-SDS",
+            "document_type": "SDS",
+            "value": "UN 3082",
+            "normalized_value": "UN 3082"
+          },
+          {
+            "document_id": "PG20261022095747-SHIP",
+            "document_type": "SHIP",
+            "value": "UN 3077",
+            "normalized_value": "UN 3077"
+          }
+        ],
+        "missing_documents": [],
+        "reason": "Extracted values disagree and do not match a configured OCR-confusion pattern. This is not proof of a source-document conflict; inspect the original documents and OCR output.",
+        "automatic_correction": false
+      },
+      {
+        "case_id": "PG20261022095747",
+        "field": "packing_group",
+        "classification": "missing_value",
+        "observations": [
+          {
+            "document_id": "PG20261022095747-SDS",
+            "document_type": "SDS",
+            "value": "III",
+            "normalized_value": "III"
+          }
+        ],
+        "missing_documents": [
+          "PG20261022095747-DG"
+        ],
+        "reason": "At least one applicable document has no extracted value. This may reflect missing source information or OCR/field-extraction failure; check the original document.",
+        "automatic_correction": false
+      }
+    ],
+    "automatic_correction": false
+  },
+  "case_metadata": {
+    "case_id": "PG20261022095747",
+    "case_folder": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747",
+    "container_photo": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/input/container_photo.jpg",
+    "document_directory": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/documents",
+    "document_ids": [
+      "PG20261022095747-DG",
+      "PG20261022095747-PACK",
+      "PG20261022095747-SDS",
+      "PG20261022095747-SHIP"
+    ],
+    "association_method": "operator-selected/manual; not independently verified"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "input_file": "/Users/tejasmestry/Downloads/BE Major Project/project/portguard_ocr_starter/outputs/predictions_integrated.json",
+  "synthetic_dataset_note": "Field/document applicability is configured for PortGuard starter templates. Validate against approved real document layouts before use beyond research/testing.",
+  "classification_note": "Possible OCR error is a rule-based review hint, not an OCR-confidence measurement. Value disagreement does not prove the source documents are wrong.",
+  "automatic_correction": false,
+  "summary": {
+    "match": 4,
+    "possible_ocr_error": 1,
+    "value_disagreement": 0,
+    "missing_value": 0,
+    "insufficient_sources": 0
+  },
+  "findings": [
+    {
+      "case_id": "abcdsf8989",
+      "field": "packing_group",
+      "classification": "possible_ocr_error",
+      "observations": [
+        {
+          "document_id": "abcdsf8989-DG",
+          "document_type": "DG",
+          "value": "I",
+          "normalized_value": "I"
+        },
+        {
+          "document_id": "abcdsf8989-SDS",
+          "document_type": "SDS",
+          "value": "II",
+          "normalized_value": "II"
+        }
+      ],
+      "missing_documents": [],
+      "reason": "Packing-group values differ by Roman-numeral-like tokens. OCR confusion is possible, but a real source-document disagreement is also possible; inspect the original images.",
+      "automatic_correction": false
+    }
+  ]
+}

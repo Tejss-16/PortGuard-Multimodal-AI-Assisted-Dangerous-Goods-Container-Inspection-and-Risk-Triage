@@ -1,0 +1,37 @@
+[
+  {
+    "case_id": "PG202610222318234346",
+    "created_at": "2026-10-22T23:19:12+05:30",
+    "review_decision": "Pending",
+    "case_record_path": "portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/case_record.json",
+    "report_path": "portguard_ocr_starter/outputs/inspection_cases/PG202610222318234346/integrated_inspection_report.json"
+  },
+  {
+    "case_id": "PG20261022153448234",
+    "created_at": "2026-10-22T15:36:20+05:30",
+    "review_decision": "Pending",
+    "case_record_path": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/case_record.json",
+    "report_path": "portguard_ocr_starter/outputs/inspection_cases/PG20261022153448234/integrated_inspection_report.json"
+  },
+  {
+    "case_id": "abcdsf8989",
+    "created_at": "2026-10-22T10:01:10+05:30",
+    "review_decision": "Reject",
+    "case_record_path": "portguard_ocr_starter/outputs/inspection_cases/abcdsf8989/case_record.json",
+    "report_path": "portguard_ocr_starter/outputs/inspection_cases/abcdsf8989/integrated_inspection_report.json"
+  },
+  {
+    "case_id": "PGDEMO001",
+    "created_at": "2026-10-22T10:02:51+05:30",
+    "review_decision": "Pending",
+    "case_record_path": "portguard_ocr_starter/outputs/inspection_cases/PGDEMO001/case_record.json",
+    "report_path": "portguard_ocr_starter/outputs/inspection_cases/PGDEMO001/integrated_inspection_report.json"
+  },
+  {
+    "case_id": "PG20261022095747",
+    "created_at": "2026-10-22T09:58:39+05:30",
+    "review_decision": "Pending",
+    "case_record_path": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/case_record.json",
+    "report_path": "portguard_ocr_starter/outputs/inspection_cases/PG20261022095747/integrated_inspection_report.json"
+  }
+]
